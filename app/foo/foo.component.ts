@@ -3,6 +3,12 @@ import { Component } from '@angular/core';
 export class Foo {
 	id: number;
 	nickName: string;
+
+	constructor() {
+		this.id = 1;
+		this.nickName = 'Billy';
+	}
+
 }
 
 @Component({
@@ -13,8 +19,5 @@ export class Foo {
 
 export class FooComponent {
 	name = 'Foo component';
-	foo : Foo = {
-		id: 1,
-		nickName: 'Billy'
-	}
+	foo = new Foo();
  }
