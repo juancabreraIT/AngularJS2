@@ -1,15 +1,5 @@
 import { Component } from '@angular/core';
-
-export class Foo {
-	id: number;
-	nickName: string;
-
-	constructor() {
-		this.id = 1;
-		this.nickName = 'Billy';
-	}
-
-}
+import { Foo } from './model/foo';
 
 @Component({
   selector: 'foo',
@@ -18,6 +8,12 @@ export class Foo {
 })
 
 export class FooComponent {
-	name = 'Foo component';
-	foo = new Foo();
+
+	public name:string;
+	public foo:Foo;
+
+	constructor() {
+		this.name = 'Foo component';
+		this.foo = new Foo(1, 'Billy');
+	}	
  }
