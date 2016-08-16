@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Foo } from './model/foo';
+import { Foo } from './foo';
 
 @Component({
   selector: 'foo',
