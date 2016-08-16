@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SampleService } from '../services/sample.service';
+import { SampleService } from './sample.service';
 
 @Component({
   selector: 'baz',
