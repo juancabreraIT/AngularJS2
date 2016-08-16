@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
 })
 
 export class DummyComponent {
-	name = 'Dummy component';
-	description = 'Standard text';
+
+  public name:string;
+  public description:string;
+  public serviceHello:string;
+
+  constructor() {
+    this.name = 'Dummy component';
+	  this.description = 'Standard text';
+  }
+	
  }
