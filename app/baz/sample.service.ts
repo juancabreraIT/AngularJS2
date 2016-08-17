@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { TITANS } from './baz.mock';
+import { TITANS } from './baz-mock';
 
 @Injectable()
 export class SampleService {
