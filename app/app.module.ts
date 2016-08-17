@@ -8,6 +8,7 @@ import { AppComponent }  	from './app.component';
 import { DummyComponent }  	from './dummy/dummy.component';
 import { FooComponent }  	from './foo/foo.component';
 import { BazComponent }  	from './baz/baz.component';
+import { HomeComponent }  	from './home/home.component';
 
 @NgModule({
   imports:      [ 
@@ -19,13 +20,11 @@ import { BazComponent }  	from './baz/baz.component';
 					AppComponent, 
 					DummyComponent,
 					FooComponent, 
-					BazComponent
+					BazComponent,
+					HomeComponent
 				],
   bootstrap:    [ 
-					AppComponent,
-					DummyComponent,
-					FooComponent,
-					BazComponent
+					AppComponent
 				]
 })
 
