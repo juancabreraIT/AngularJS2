@@ -4,6 +4,7 @@ import { DummyComponent }       from './dummy/dummy.component';
 import { FooComponent }         from './foo/foo.component';
 import { BazComponent }         from './baz/baz.component';
 import { HomeComponent }        from './home/home.component';
+import { AthleteFormComponent } from './sample_form/athlete-form.component';
 
 const appRoutes : Routes = [
     {
@@ -26,6 +27,10 @@ const appRoutes : Routes = [
     {
         path: 'baz',
         component: BazComponent
+    },
+    {
+        path: 'athleteForm',
+        component: AthleteFormComponent
     }
 ];
 

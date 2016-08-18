@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
-import { DummyComponent } from './dummy/dummy.component';
-import { FooComponent } from './foo/foo.component';
-import { BazComponent } from './baz/baz.component';
+import { Component }            from '@angular/core';
+import { DummyComponent }       from './dummy/dummy.component';
+import { FooComponent }         from './foo/foo.component';
+import { BazComponent }         from './baz/baz.component';
+import { AthleteFormComponent } from './sample_form/athlete-form.component';
 
 @Component({
   selector: 'app',
@@ -9,7 +10,8 @@ import { BazComponent } from './baz/baz.component';
   directives: [
                 DummyComponent,
                 FooComponent,
-                BazComponent
+                BazComponent,
+                AthleteFormComponent
               ],
   styleUrls: ['/app/app.css']
 })

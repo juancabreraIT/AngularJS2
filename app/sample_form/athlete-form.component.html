@@ -1,0 +1,24 @@
+<div class="container">
+    <hr>
+    <h1>Athlete Form</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" required
+                [(ngModel)]="model.name" name="name" >
+      </div>
+      <div class="form-group">
+        <label for="discipline">Discipline</label>
+        <select class="form-control" id="discipline" required
+                [(ngModel)]="model.discipline" name="discipline" >
+            <option *ngFor="let d of disciplines" [value]="d">{{d}}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="lastPosition">Last position</label>
+        <input type="text" class="form-control" id="lastPosition"
+               [(ngModel)]="model.lastPosition" name="lastPosition" >
+      </div>      
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
