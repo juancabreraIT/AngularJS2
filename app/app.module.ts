@@ -10,6 +10,7 @@ import { FooComponent }  		from './foo/foo.component';
 import { BazComponent }  		from './baz/baz.component';
 import { HomeComponent }  		from './home/home.component';
 import { AthleteFormComponent }	from './sample_form/athlete-form.component';
+import { CitiesComponent }		from './cities/cities.component';
 
 @NgModule({
   imports:      [ 
@@ -23,7 +24,8 @@ import { AthleteFormComponent }	from './sample_form/athlete-form.component';
 					FooComponent, 
 					BazComponent,
 					HomeComponent,
-					AthleteFormComponent
+					AthleteFormComponent,
+					CitiesComponent
 				],
   bootstrap:    [ 
 					AppComponent

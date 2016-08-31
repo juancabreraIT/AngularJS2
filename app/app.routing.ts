@@ -5,6 +5,7 @@ import { FooComponent }         from './foo/foo.component';
 import { BazComponent }         from './baz/baz.component';
 import { HomeComponent }        from './home/home.component';
 import { AthleteFormComponent } from './sample_form/athlete-form.component';
+import { CitiesComponent }		from './cities/cities.component';
 
 const appRoutes : Routes = [
     {
@@ -31,6 +32,10 @@ const appRoutes : Routes = [
     {
         path: 'athleteForm',
         component: AthleteFormComponent
+    },
+    {
+        path: 'cities',
+        component: CitiesComponent
     }
 ];
 

@@ -3,6 +3,7 @@ import { DummyComponent }       from './dummy/dummy.component';
 import { FooComponent }         from './foo/foo.component';
 import { BazComponent }         from './baz/baz.component';
 import { AthleteFormComponent } from './sample_form/athlete-form.component';
+import { CitiesComponent }		  from './cities/cities.component';
 
 @Component({
   selector: 'app',
@@ -11,7 +12,8 @@ import { AthleteFormComponent } from './sample_form/athlete-form.component';
                 DummyComponent,
                 FooComponent,
                 BazComponent,
-                AthleteFormComponent
+                AthleteFormComponent,
+                CitiesComponent
               ],
   styleUrls: ['/app/app.css']
 })
