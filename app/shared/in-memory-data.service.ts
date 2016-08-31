@@ -1,0 +1,56 @@
+import { InMemoryDbService } from 'angular2-in-memory-web-api';
+
+export class InMemoryDataService implements InMemoryDbService {
+  createDb() {
+    let cities = [
+    'Athens',
+    'Paris',
+    'St. Louis',
+    'London',
+    'Stockholm',
+    'Berlin',
+    'Antwerp',
+    'Chamonix',
+    'St. Moritz',
+    'Amsterdam',
+    'Lake Placid',
+    'Los Angeles',
+    'Garmisch-Partenkirchen',
+    'Berlin',
+    'Helsinki',
+    'Cortina d Ampezzo',
+    'Oslo',
+    'Melbourne',
+    'Squaw Valley',
+    'Rome',
+    'Innsbruck',
+    'Tokyo',
+    'Grenoble',
+    'Mexico City',
+    'Sapporo',
+    'Munich',
+    'Innsbruck',
+    'Montreal',
+    'Lake Placid',
+    'Moscow',
+    'Sarajevo',
+    'Calgary',
+    'Seoul',
+    'Albertville',
+    'Barcelona',
+    'Lillehammer',
+    'Atlanta',
+    'Sidney',
+    'Nagano',
+    'Salt Lake City',
+    'Turin',
+    'Beijing',
+    'Vancouver',
+    'Sochi',
+    'Rio de Janeiro',
+    'Pyeongchang',
+    'Tokyo'
+    ];
+    return {cities};
+  }
+}

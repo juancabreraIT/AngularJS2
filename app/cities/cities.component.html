@@ -1,4 +1,9 @@
 <hr>
 <div>
     <h1>Olimpic cities</h1>
+    <ul>
+        <li *ngFor="let city of cities; let i = index">
+            {{i+1}}) {{city}}<br>
+        </li>
+    </ul>
 </div>
