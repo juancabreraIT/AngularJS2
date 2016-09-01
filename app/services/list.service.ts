@@ -15,3 +15,40 @@ export class ListService {
             .map(result => result.json());
     }
 }
+
+/**
+ * JSON Response
+  {
+    "status": "success",
+    "data": [
+        {
+            "name": "Barcelona",
+            "year": 1992
+        },
+        {
+            "name": "Atlanta",
+            "year": 1996
+        },
+        {
+            "name": "Sidney",
+            "year": 2000
+        },
+        {
+            "name": "Athens",
+            "year": 2004
+        },
+        {
+            "name": "Beijing",
+            "year": 2008
+        },
+        {
+            "name": "London",
+            "year": 2012
+        },
+        {
+            "name": "Rio de Janeiro",
+            "year": 2016
+        }
+        ]
+    }
+ */
