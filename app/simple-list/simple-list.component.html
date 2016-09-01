@@ -1,0 +1,12 @@
+<h2>Simple list</h2>
+<ul>
+    <li *ngFor="let city of cities" class="text-success">{{city.name}} ({{city.year}})</li>
+    <p *ngIf="cities.length == 0" class="bg-warning">No cities collected!</p>
+    <p *ngIf="errorMessage != ''" class="bg-danger">Error: {{errorMessage}}</p>
+</ul>
+
+<button type="button" class="btn btn-default" 
+        (click)="getCities()">Download cities</button>
+
+<button type="button" class="btn btn-default" 
+        (click)="clear()">Clear cities</button>        

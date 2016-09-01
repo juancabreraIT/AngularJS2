@@ -1,14 +1,18 @@
 import { NgModule }      	from '@angular/core';
 import { BrowserModule } 	from '@angular/platform-browser';
+import { HttpModule} 		from '@angular/http';
 
-import { AppComponent }  	from './app.component';
+import { AppComponent }  		from './app.component';
+import { SimpleListComponent }	from './simple-list/simple-list.component';
 
 @NgModule({
   imports:      [ 
-					BrowserModule
+					BrowserModule,
+					HttpModule
 				],
   declarations: [ 
-					AppComponent 
+					AppComponent,
+					SimpleListComponent
 				],
   bootstrap:    [ 
 					AppComponent
