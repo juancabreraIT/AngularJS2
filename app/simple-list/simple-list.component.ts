@@ -11,6 +11,7 @@ class OlympicCities {
 @Component({
     selector: 'simple-list',
     templateUrl: './app/simple-list/simple-list.component.html',
+    styleUrls: ['./app/simple-list/simple-list.component.css'],
     providers: [ ListService ]
 })
 
@@ -19,6 +20,7 @@ export class SimpleListComponent implements OnInit {
     public cities : OlympicCities[];
     public status : string;
     public errorMessage : string;
+    public loading = false;
 
 
     constructor(private _service : ListService) { 
@@ -32,13 +34,22 @@ export class SimpleListComponent implements OnInit {
      }
 
      getCities() {
-         this._service.getList()
+         this.loading = true;
+         setTimeout(() => this.doCall(), 3000)
+     }
+
+     doCall() {
+        this._service.getList()            
             .subscribe(
                 result => { this.cities = result.data,
                             this.status = result.status
+
+                            this.loading = false;
                 },
                 error => { console.log(<any>error)
                             this.errorMessage = <any> error;
+
+                            this.loading = false;
                 }
             );
      }

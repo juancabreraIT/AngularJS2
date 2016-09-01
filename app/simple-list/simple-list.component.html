@@ -1,7 +1,10 @@
 <h2>Simple list</h2>
 <ul>
+    <li class="loading" *ngIf="loading">
+        <img src="./app/assets/images/loading.gif" />
+    </li>
     <li *ngFor="let city of cities" class="text-success">{{city.name}} ({{city.year}})</li>
-    <p *ngIf="cities.length == 0" class="bg-warning">No cities collected!</p>
+    <p *ngIf="cities.length == 0 && !loading" class="bg-warning">No cities collected!</p>
     <p *ngIf="errorMessage != ''" class="bg-danger">Error: {{errorMessage}}</p>
 </ul>
 
@@ -9,4 +12,4 @@
         (click)="getCities()">Download cities</button>
 
 <button type="button" class="btn btn-default" 
-        (click)="clear()">Clear cities</button>        
+        (click)="clear()">Clear cities</button>
